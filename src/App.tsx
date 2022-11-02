@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Footer } from "./common/components/footer/footer.components";
+import { Header } from "./common/components/header/header.component";
+import { MenuList } from "./modules/menu/components/menu-list/menu-list.component";
 
-function App() {
+import mockPizzas from './moks/pizza.json';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <div className="mx-12 mb-24">
+      <MenuList items={mockPizzas}/>
+
+      </div>
+      <Footer/>
     </div>
   );
 }
 
-export default App;
+export { App };
