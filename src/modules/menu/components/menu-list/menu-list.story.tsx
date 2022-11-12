@@ -11,6 +11,3 @@ export default {
 const Template: ComponentStory<typeof MenuList> = (args) => <MenuList {...args}/>;
 
 export const View = Template.bind({});
-View.args = {
-  items: pizzaItems
-}

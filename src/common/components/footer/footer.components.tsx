@@ -3,7 +3,7 @@ import { FooterLink } from "./footer-link/footer-link.components";
 
 export const Footer = () => {
   return (
-    <div className="bg-gray-900 ">
+    <div className="bg-gray-900 mt-auto">
       <div className="pt-12 px-12">
         <h2 className="mb-4 text-zinc-500 font-bold text-sm uppercase">
           Contacts
